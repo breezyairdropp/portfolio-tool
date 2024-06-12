@@ -335,7 +335,7 @@ const Leads: NextPage = () => {
           {!loading && (
             <button
               onClick={() => {
-                document.getElementById("pendingFetch").innerHTML = 
+                document?.getElementById("pendingFetch")?.innerHTML != null ?
     
     `<div class="w-full mt-10 shadow-md border border-gray-150 rounded-lg py-4">
     <div class="justify-between flex items-center space-x-3 mt-3 px-2 sm:px-10">
@@ -375,7 +375,7 @@ const Leads: NextPage = () => {
       </div>
     </div>
   </div>
-  ` + document.getElementById("pendingFetch").innerHTML;
+  ` + document.getElementById("pendingFetch").innerHTML : null
                 
                 getQueryResult()
               }}
