@@ -212,7 +212,7 @@ const Leads: NextPage = () => {
         vibe: vibe,
       };
 
-      JSON.parse(pendingArray).unshift(
+      JSON.parse(pendingArray).unshift({
         title: searchString,
         vibe: vibe,
       });
