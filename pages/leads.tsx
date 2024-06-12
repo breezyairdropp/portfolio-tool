@@ -98,8 +98,8 @@ const Leads: NextPage = () => {
     );
   }
 
-  const ResultCard = ({ storedData, key }) => {
-    const [removing, setRemoving] = useState(false);
+  const ResultCard = ({ storedData: any, key: any }) => {
+   // const [removing, setRemoving] = useState(false);
     return (
       <div className="w-full mt-10 shadow-md border border-gray-150 rounded-lg py-4">
         {/* <span className="text-xl font-semibold text-center items-center">Eatery in Uyo</span> */}
