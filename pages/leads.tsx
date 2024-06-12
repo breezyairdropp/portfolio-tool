@@ -178,7 +178,7 @@ const Leads: NextPage = () => {
       vibe: vibe,
     };
 
-    let pendingArray = localStorage.getItem("dataPending");
+    let pendingArray = localStorage.getItem("dataPending") || "";
 
     
 
