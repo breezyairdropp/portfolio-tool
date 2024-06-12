@@ -93,12 +93,12 @@ const Leads: NextPage = () => {
       <div
       style={{zIndex: 100}}
         className="absolute inset-0 bg-black z-10 items-center justify-center"
-        dangerouslySetInnerHTML={{ __html: resultTableTemp }}
       ></div>
     );
-  }
+  };
+  
 
-  const ResultCard = ({ storedData: string[], key: number }) => {
+  function ResultCard ({ storedData: string[], key: number }) {
    // const [removing, setRemoving] = useState(false);
     return (
       <div className="w-full mt-10 shadow-md border border-gray-150 rounded-lg py-4">
