@@ -172,7 +172,7 @@ const Leads: NextPage = () => {
   async function getQueryResult(e: { preventDefault: () => void }) {
     e.preventDefault();
 
-    let newPendingFetch = "";
+    let newPendingFetch = {};
     let puttingData = {
       title: searchString,
       vibe: vibe,
