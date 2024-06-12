@@ -375,9 +375,9 @@ const Leads: NextPage = () => {
       </div>
     </div>
   </div>
-  ` + document?.getElementById("pendingFetch")?.innerHTML : ""
+  ` + document?.getElementById("pendingFetch")?.innerHTML : "";
                 
-                getQueryResult()
+                
               }}
               style={{
                 color: checkTheme == "dark" ? "white" : "black",
