@@ -57,16 +57,7 @@ const Leads: NextPage = () => {
 
     // modalData?.result.map
 
-    modalData?.result.forEach((company) => {
-      resultTitle = company?.category;
-      resultListTemp += `<tr>
-          <td>${company?.storeName}</td>
-          <td>${company?.address}</td>
-          <td>${company?.phone}</td>
-          <td>${company?.bizWebsite}</td>
-          <td>${company?.ratingText}</td>
-          </tr>`;
-    });
+    
 
     const resultTableTemp = `<h2>${resultTitle} (${modalData?.result?.length} )</h2>
   <div class="text-center">
