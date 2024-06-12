@@ -156,9 +156,7 @@ const Leads: NextPage = () => {
               //   }
               // }}
               // disabled={removing}
-              className={`${
-                removing ? "cursor-not-allowed bg-gray-100" : ""
-              }bg-red-500 text-white border-red-500 hover:text-red-500 hover:bg-white py-1.5 w-24 text-sm border-solid border rounded-md focus:outline-none transition-all ease-in-out duration-150`}
+              className={`bg-red-500 text-white border-red-500 hover:text-red-500 hover:bg-white py-1.5 w-24 text-sm border-solid border rounded-md focus:outline-none transition-all ease-in-out duration-150`}
             >
               Remove
               {/* {removing ? <LoadingDots /> : 'Remove'} */}
