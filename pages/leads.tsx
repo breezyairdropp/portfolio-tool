@@ -48,27 +48,6 @@ const Leads: NextPage = () => {
     setPendingFetch(getPendingFetch);
   }, [storedFetch, pendingFetch]);
 
-  function activateDark() {
-    document.querySelector("body").classList.add("dark");
-  }
-
-  function activateLight() {
-    document.querySelector("body").classList.remove("dark");
-  }
-
-  function darkMode() {
-    console.log(checkTheme);
-
-    document.querySelector("body").style.background = "#212121";
-    // document.querySelector("body").style.color = "white";
-  }
-
-  console.log(checkTheme);
-
-  // checkTheme == 'dark' ? darkMode() : null
-
-  // console.log(Math.random().toString().slice(2))
-
   function Modal() {
     // setShowModal(true)
     console.log(modalData?.result);
