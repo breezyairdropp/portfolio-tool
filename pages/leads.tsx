@@ -180,47 +180,7 @@ const Leads: NextPage = () => {
 
     let pendingArray = localStorage.getItem("dataPending");
 
-    document.getElementById("pendingFetch").innerHTML = 
     
-    `<div class="w-full mt-10 shadow-md border border-gray-150 rounded-lg py-4">
-    <div class="justify-between flex items-center space-x-3 mt-3 px-2 sm:px-10">
-      <div class="text-left font-semibold flex items-center">${puttingData?.title}</div>
-      <p class="text-black text-gray-500 font-normal text-sm">${puttingData?.vibe}</p>
-      <div class="h-7 w-36 bg-gray-300 rounded-md animate-pulse"></div>
-    </div>
-    <div class="flex justify-between space-x-4 pt-10 px-2 sm:px-10">
-      <a
-        target="_blank"
-        rel="noreferrer"
-        class=" text-left font-semibold flex items-center"
-      >
-        <span class="inline-block ml-2"></span>
-      </a>
-      <div class="flex space-x-3">
-        <button
-          disabled=""
-          class="cursor-not-allowed bg-gray-100 text-gray-500 border-gray-200 py-1.5 w-24 text-sm border-solid border rounded-md focus:outline-none transition-all ease-in-out duration-150"
-        >
-          <span class="loading-dots_loading__LGQca">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
-        <button
-          disabled=""
-          class="cursor-not-allowed bg-red-500 text-gray-500 border-red-500 py-1.5 w-24 text-sm border-solid border rounded-md focus:outline-none transition-all ease-in-out duration-150"
-        >
-          <span class="loading-dots_loading__LGQca">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
-      </div>
-    </div>
-  </div>
-  ` + document.getElementById("pendingFetch").innerHTML;
 
     localStorage.setItem(
       "dataPending",
@@ -367,7 +327,51 @@ const Leads: NextPage = () => {
 
           {!loading && (
             <button
-              onClick={getQueryResult}
+              onClick={() => {
+                document.getElementById("pendingFetch").innerHTML = 
+    
+    `<div class="w-full mt-10 shadow-md border border-gray-150 rounded-lg py-4">
+    <div class="justify-between flex items-center space-x-3 mt-3 px-2 sm:px-10">
+      <div class="text-left font-semibold flex items-center">${puttingData?.title}</div>
+      <p class="text-black text-gray-500 font-normal text-sm">${puttingData?.vibe}</p>
+      <div class="h-7 w-36 bg-gray-300 rounded-md animate-pulse"></div>
+    </div>
+    <div class="flex justify-between space-x-4 pt-10 px-2 sm:px-10">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        class=" text-left font-semibold flex items-center"
+      >
+        <span class="inline-block ml-2"></span>
+      </a>
+      <div class="flex space-x-3">
+        <button
+          disabled=""
+          class="cursor-not-allowed bg-gray-100 text-gray-500 border-gray-200 py-1.5 w-24 text-sm border-solid border rounded-md focus:outline-none transition-all ease-in-out duration-150"
+        >
+          <span class="loading-dots_loading__LGQca">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <button
+          disabled=""
+          class="cursor-not-allowed bg-red-500 text-gray-500 border-red-500 py-1.5 w-24 text-sm border-solid border rounded-md focus:outline-none transition-all ease-in-out duration-150"
+        >
+          <span class="loading-dots_loading__LGQca">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  ` + document.getElementById("pendingFetch").innerHTML;
+                
+                getQueryResult()
+              }}
               style={{
                 color: checkTheme == "dark" ? "white" : "black",
                 borderRadius: "0.375rem",
