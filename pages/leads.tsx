@@ -50,7 +50,6 @@ const Leads: NextPage = () => {
 
   function Modal() {
     // setShowModal(true)
-    console.log(modalData?.result);
     let resultContent = "";
 
     let resultListTemp = "";
@@ -140,8 +139,8 @@ const Leads: NextPage = () => {
               onClick={(e) => {
                 e.preventDefault();
 
-                console.log(this);
-                console.log(storedData);
+                // console.log(this);
+                // console.log(storedData);
                 setModalData(storedData);
                 setShowModal(true);
               }}
