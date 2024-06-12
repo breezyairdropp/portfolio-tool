@@ -220,7 +220,7 @@ const Leads: NextPage = () => {
     }
 
     console.log(searchString);
-    let newStoredFetch = "";
+    let newStoredFetch = {};
     let storedArray = localStorage.getItem("storedFetch") || "";
 
     let letsDo = await fetch(`/api/add-domain?query=${searchString}`);
