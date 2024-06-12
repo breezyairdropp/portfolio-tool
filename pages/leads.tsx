@@ -98,7 +98,7 @@ const Leads: NextPage = () => {
   };
   
 
-  function ResultCard ({ storedData: string[], key: number }) {
+  function ResultCard ({ storedData: string, key: number }) {
    // const [removing, setRemoving] = useState(false);
     return (
       <div className="w-full mt-10 shadow-md border border-gray-150 rounded-lg py-4">
