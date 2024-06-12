@@ -11,7 +11,6 @@ import {
 } from "react";
 import DropDown, { VibeType } from "@/components/DropDown";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import LoadingDots from "@/components/LoadingDots";
 import Toggle from "@/components/Toggle";
 import DomainCardPlaceholder from "@/components/domain-card-placeholder";
