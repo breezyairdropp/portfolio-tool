@@ -375,7 +375,7 @@ const Leads: NextPage = () => {
       </div>
     </div>
   </div>
-  ` + document.getElementById("pendingFetch").innerHTML : null
+  ` + document.getElementById("pendingFetch").innerHTML : ""
                 
                 getQueryResult()
               }}
