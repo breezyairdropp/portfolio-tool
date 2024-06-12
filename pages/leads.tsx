@@ -172,7 +172,7 @@ const Leads: NextPage = () => {
   async function getQueryResult(e: { preventDefault: () => void }) {
     e.preventDefault();
 
-    let newPendingFetch = {};
+    let newPendingFetch = "";
     let puttingData = {
       title: searchString,
       vibe: vibe,
@@ -217,7 +217,7 @@ const Leads: NextPage = () => {
     }
 
     console.log(searchString);
-    let newStoredFetch = {};
+    let newStoredFetch = "";
     let storedArray = localStorage.getItem("storedFetch");
 
     let letsDo = await fetch(`/api/add-domain?query=${searchString}`);
