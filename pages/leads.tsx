@@ -221,7 +221,7 @@ const Leads: NextPage = () => {
 
     console.log(searchString);
     let newStoredFetch = "";
-    let storedArray = localStorage.getItem("storedFetch");
+    let storedArray = localStorage.getItem("storedFetch") || "";
 
     let letsDo = await fetch(`/api/add-domain?query=${searchString}`);
 
@@ -250,7 +250,11 @@ const Leads: NextPage = () => {
         result: fetchedResult,
       };
 
-      JSON.parse(storedArray).unshift(newStoredFetch);
+      JSON.parse(storedArray).unshift({
+        title: searchString,
+        vibe: vibe,
+        result: fetchedResult,
+      });
       localStorage.setItem("storedFetch", JSON.stringify(storedArray));
     }
   }
