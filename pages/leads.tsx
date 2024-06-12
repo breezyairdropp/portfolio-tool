@@ -212,7 +212,10 @@ const Leads: NextPage = () => {
         vibe: vibe,
       };
 
-      JSON.parse(pendingArray).unshift(newPendingFetch);
+      JSON.parse(pendingArray).unshift(
+        title: searchString,
+        vibe: vibe,
+      });
       localStorage.setItem("dataPending", JSON.stringify(pendingArray));
     }
 
