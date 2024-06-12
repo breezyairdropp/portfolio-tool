@@ -29,7 +29,7 @@ const Leads: NextPage = () => {
   const [isPro, setIsPro] = useState(false);
   const [checkTheme, setCheckTheme] = useState("light");
   const [showModal, setShowModal] = useState(false);
-  const [modalData, setModalData] = useState({});
+  const [modalData, setModalData] = useState([]);
 
   const [storedFetch, setStoredFetch] = useState("");
   const [pendingFetch, setPendingFetch] = useState("");
