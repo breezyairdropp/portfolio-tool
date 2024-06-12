@@ -415,7 +415,7 @@ const Leads: NextPage = () => {
         </div>
         <br />
         <br />
-        <button onclick={getQueryResult}>getResult</button>
+        <button onClick={getQueryResult}>getResult</button>
         <div className="w-full max-w-1xl sm:max-w-2xl">
           <div className="w-full max-w-1xl sm:max-w-2xl">
             <div id="pendingFetch">
