@@ -59,7 +59,7 @@ const Leads: NextPage = () => {
 
     
 
-    const resultTableTemp = `<h2>${resultTitle} (${modalData?.result?.length} )</h2>
+    const resultTableTemp = `<h2>${resultTitle} </h2>
   <div class="text-center">
   <button class="btn btn-default"><span class="glyphicon glyphicon-arrow-down"></span> DOWNLOAD DATA</button>
   </div>
