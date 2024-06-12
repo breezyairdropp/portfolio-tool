@@ -178,7 +178,7 @@ const Leads: NextPage = () => {
       vibe: vibe,
     };
 
-    let pendingArray = JSON.parse(localStorage.getItem("dataPending"));
+    let pendingArray = localStorage.getItem("dataPending");
 
     document.getElementById("pendingFetch").innerHTML = 
     
@@ -252,13 +252,13 @@ const Leads: NextPage = () => {
         vibe: vibe,
       };
 
-      pendingArray?.unshift(newPendingFetch);
+      JSON.parse(pendingArray).unshift(newPendingFetch);
       localStorage.setItem("dataPending", JSON.stringify(pendingArray));
     }
 
     console.log(searchString);
     let newStoredFetch;
-    let storedArray = JSON.parse(localStorage.getItem("storedFetch"));
+    let storedArray = localStorage.getItem("storedFetch");
 
     let letsDo = await fetch(`/api/add-domain?query=${searchString}`);
 
@@ -267,7 +267,6 @@ const Leads: NextPage = () => {
     let fetchedResult = await checkFetch;
 
     if (storedFetch == null || storedFetch == "") {
-      console.log("kufre");
       localStorage.setItem(
         "storedFetch",
         JSON.stringify([
@@ -288,7 +287,7 @@ const Leads: NextPage = () => {
         result: fetchedResult,
       };
 
-      storedArray?.unshift(newStoredFetch);
+      JSON.parse(storedArray).unshift(newStoredFetch);
       localStorage.setItem("storedFetch", JSON.stringify(storedArray));
     }
   }
