@@ -339,8 +339,8 @@ const Leads: NextPage = () => {
     
     `<div class="w-full mt-10 shadow-md border border-gray-150 rounded-lg py-4">
     <div class="justify-between flex items-center space-x-3 mt-3 px-2 sm:px-10">
-      <div class="text-left font-semibold flex items-center">${puttingData?.title}</div>
-      <p class="text-black text-gray-500 font-normal text-sm">${puttingData?.vibe}</p>
+      <div class="text-left font-semibold flex items-center">${searchString}</div>
+      <p class="text-black text-gray-500 font-normal text-sm">${vibe}</p>
       <div class="h-7 w-36 bg-gray-300 rounded-md animate-pulse"></div>
     </div>
     <div class="flex justify-between space-x-4 pt-10 px-2 sm:px-10">
